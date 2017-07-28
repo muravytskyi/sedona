@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sedona</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="wrapper">	
+		<header>
+			<nav class="main-navigation clearfix">
+				<div class="navigation-center">
+					<a href="index.html" class="top-logo"><img src="img/top-logo.png" alt="logo"></a>
+				</div>
+				<input class="nav-burger-checkbox" type="checkbox" id="burger">
+				<label class="nav-burger" for="burger"><span></span></label>
+				<ul class="menu-hidden">
+					<li>
+						<a href="#">ИНФОРМАЦИЯ</a>
+					</li>
+					<li>
+						<a href="#">ФОТО И ВИДЕО</a>
+					</li>
+					<li>
+						<a href="#">КАРТА ШТАТА</a>
+					</li>
+					<li>
+						<a href="hotel/hotel.html">ГОСТИНИЦЫ</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="background-sedona"></div>
+		<section>
+			<div class="content">
+				<div class="description-title">
+					<span>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+					ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</span>
+					<p>РАССМОТРИМ 5 ПРИЧИН. ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+				</div>
+				<div class="container">
+					<div class="container-sedona">
+						<div class="sedona-description">
+							<span>НАСТОЯЩИЙ<br>
+							ГОРОДОК</span>
+							<p>- №1 -</p>
+							<p>СЕДОНА - НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>
+							 ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+						</div>
+					</div>
+					<div class="photo-description">
+					</div>
+				</div>
+				<div class="container services">
+					<div class="img-house">
+						<img src="img/house.png">
+						<span>ЖИЛЬЕ</span>
+						<p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+					</div>
+					<div class="img-burger">
+						<img src="img/burger.png">
+						<span>ЕДА</span>
+						<p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЕ БУРГЕРЫ ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+					</div>
+					<div class="img-souvenir">
+						<img src="img/souvenir.png">
+						<span>СУВЕНИРЫ</span>
+						<p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+					</div>
+				</div>
+				<div class="container container-row-revers">
+					<div class="photo-bridge">
+					</div>
+					<div class="container-bridge">
+						<div class="bridge-description">
+							<span>ТАМ ЕСТЬ<br>
+							МОСТ ДЬЯВОЛА</span>
+							<p>- №2 -</p>
+							<p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br>
+							 ВЫ ОСМЕЛИТЕСЬ</p>
+						</div>
+					</div>
+				</div>
+				<div class="block-advantage">
+					<div class="advantage">
+						<span>НЕБОЛЬШАЯ<br>
+						ПЛОЩАДЬ</span>
+						<p>- №3 -</p>
+						<p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>
+						НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+					</div>
+					<div class="advantage">
+						<span>КРАСИВАЯ<br>
+						ДОРОГА</span>
+						<p>- №4 -</p>
+						<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>
+						НЕ СКУЧНО!</p>
+					</div>
+					<div class="advantage">
+						<span>МАЛО<br>
+						ТУРИСТОВ</span>
+						<p>- №5 -</p>
+						<p>БОЛЬШЕНСТВО ЕДЕТ В ГРАНД КАНЬОН И<br>
+						ТОЛПИТСЯ ТАМ</p>
+					</div>
+				</div>
+			</div>
+			<div class="hotel-map">
+				<div class="interest-block">
+					<span>ЗАИНТЕРЕСОВАЛИСЬ?</span>
+					<p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
+					И МЫ ПОКАЖЕМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+				</div>
+				<div class="form-block">
+					<a class="active-form" href="#modal">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+					<form class="feedback-form" id="modal">
+						<div class="feedback-form-group">
+							<label>ДАТА ЗАЕЗДА:</label>
+							<input type="text" class="date-entry">
+						</div>
+						<div class="feedback-form-group">
+							<label>ДАТА ВЫЕЗДА:</label>
+							<input type="text" class="date-exit">
+						</div>
+						<div class="feedback-form-group">
+							<div class="adult-age divs">
+								<label>ВЗРОСЛЫЕ:</label>
+								<input type="button" class="minus">
+								<input type="namber" class="number" readonly value="0">
+								<input type="button" class="plus">
+							</div>
+							<div class="children-age divs">
+								<label>ДЕТИ:</label>
+								<input type="button" class="minus">
+								<input type="namber" class="number" readonly value="0">
+								<input type="button" class="plus">
+							</div>
+						</div>
+						<a href="">НАЙТИ</a>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="block-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105515.96415486591!2d-112.08865707124572!3d34.26451700951378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45308a21c3767a7a!2sAgua+Fria+National+Monument!5e0!3m2!1sru!2sua!4v1486471030657" width="100%" height="462" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="block-footer">
+					<div class="visit-sedona">
+						<a href="#"><span>#VISITSEDONA</span>
+						</a>
+					</div>
+					<div class="footer-social">
+						<a href="#" class="btn-tw"></a>
+						<a href="#" class="btn-fb"></a>
+						<a href="https://www.youtube.com" class="btn-yb"></a>
+					</div>
+					<div class="html-academy">
+						<a href="https://htmlacademy.ru/"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
