@@ -79,6 +79,7 @@ $(function () {
     $( "#amount-1" ).val( $( "#slider-range" ).slider( "values", 1 ));
 
     $(".nav-burger").click(function() {
+    	$(".navigation-center").toggleClass("display-none");
     	$(".main-navigation li").slideToggle(250);
     });
 

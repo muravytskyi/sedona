@@ -98,6 +98,10 @@ p {
 	color: #000;
 }
 
+.display-none {
+	display: none;
+}
+
 .nav-burger {
 	position: absolute;
 	display: none;
